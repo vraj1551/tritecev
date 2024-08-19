@@ -46,7 +46,7 @@
             <ul>
               <li class="dropdown"><a href="#"><span>Electric Vehicles</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">2 Wheelers</a></li>
+                  <li><a href="two-wheelers.html">2 Wheelers</a></li>
                   <li><a href="#">3 Wheelers</a></li>
                   <li><a href="#">Public Transport</a></li>
                   <li><a href="#">Industrial Vehicles</a></li>
@@ -1239,7 +1239,7 @@
       </div><!-- End Section Title -->
 
       <div class="mb-5">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11682.411070544358!2d55.2961194727142!3d25.15951518470517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69c36f082541%3A0x16f65b407bb87f9!2sMeydan%20Grandstand%20-%20Gate%20C!5e0!3m2!1sen!2sin!4v1724060929611!5m2!1sen!2sin"></iframe>
       </div><!-- End Google Maps -->
 
       <div class="container" data-aos="fade">
@@ -1250,13 +1250,36 @@
 
             <div class="info">
               <h3>Get in touch</h3>
-              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+              <!-- <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p> -->
 
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+              <div class="info-item d-flex flex-column">
+                <div class="d-flex mt-2">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Dubai Office</h4>
+                    <p>Meydan Grand Stand, 6th Floor, Meydan Nad-Al-Sheba,Dubai,UAE</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Africa Office</h4>
+                    <p>Plot No. 10, Berkeley Road, Bhd. City Oil, Martin Road, Old Kampala, Kampala, Uganda</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Gujarat Office</h4>
+                    <p>3rd Floor, Aditi Plaza, Plot 46/ B Gautam Nagar, Above GKB Optical BSD IDBI Bank, Ambedkar Circle Alkapuri, Vadodara,390007</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Delhi Office</h4>
+                    <p>1002,1003 Kanchenjunga Building Barakhamba Road, Connaught Place, New Delhi - 110001</p>
+                  </div>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1264,15 +1287,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <p>support@tritecev.com                  </p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1281,27 +1296,40 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" id="contactForm" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Company Name" required="">
+                  <input type="text" name="companyName" class="form-control" placeholder="Company Name" required>
                 </div>
               </div>
               <div class="row mt-lg-3">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Designation" required="">
+                  <input type="text" name="designation" class="form-control" placeholder="Your Designation">
                 </div>
                 <div class="col-md-6 form-group mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
               </div>
-              <div class="row col-6 mt-lg-3">
-                <div class="col-md-4 form-group">
+              <div class="row mt-lg-3">
+                <div class="col-md-6 form-group">
+                  <select name="subject" class="form-control w-100" required>
+                    <option value="" disabled selected>Subject</option>
+                    <option value="2 wheeler ev">2 Wheeler EVs</option>
+                    <option value="3 wheeler ev">3 Wheeler EVs</option>
+                    <option value="Buses">Buses</option>
+                    <option value="Chargin Infrastructure">Chargin Infrastructure</option>
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="row col-6 mt-lg-3 phone-number">
+                <div class="col-lg-4 code-div form-group">
                   <!-- country codes (ISO 3166) and Dial codes. -->
-                  <select name="countryCode" id="" class="form-control">
+                  <select name="countryCode" id="" class="form-control code-select" required>
 	<option data-countryCode="GB" value="44" Selected>UK (+44)</option>
 	<option data-countryCode="US" value="1">USA (+1)</option>
 	<optgroup label="Other countries">
@@ -1522,22 +1550,23 @@
 	</optgroup>
                   </select>
                 </div>
-                <div class="col-md-8 form-group mt-md-0">
-                  <input type="tel" class="form-control" name="phone" id="Phone Number" placeholder="Phone Number" required="">
+                <div class="col-lg-8 col-sm-4 number-div form-group mt-md-0">
+                  <input type="tel" class="form-control ph-input me-0" name="phoneNumber" placeholder="Phone Number" required>
                 </div>
               </div>
-              <div class="form-group mt-3 col-6">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-              </div>
+              
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+                <textarea class="form-control" name="message" placeholder="Message"></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
+              <div class="my-3 text-center">
+                <!-- <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                <div id="res"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center">
+                <button name="btn" type="submit">Submit</button>
+              </div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -1633,7 +1662,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/form.js"></script>
 </body>
 
 </html>

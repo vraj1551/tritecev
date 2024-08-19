@@ -2173,7 +2173,6 @@ section,
   padding-bottom: 8px;
 }
 
-
 select{
   height: 48px !important;
   width: 120px !important;
@@ -2187,6 +2186,7 @@ select{
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=tel],
 .contact .php-email-form input[type=email],
+select,
 .contact .php-email-form textarea {
   border-radius: 0px;
   box-shadow: none;
@@ -2198,17 +2198,22 @@ select{
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=tel]:focus,
 .contact .php-email-form input[type=email]:focus,
+select,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=tel],
-.contact .php-email-form input[type=email] {
+.contact .php-email-form input[type=email],
+select {
   height: 48px;
   padding: 10px 15px;
 }
-
+.ph-input{
+  width: 100% !important;
+  margin: 0px !important;
+}
 .contact .php-email-form textarea {
   padding: 10px 12px;
   height: 290px;
@@ -2225,6 +2230,40 @@ select{
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+}
+@media screen and (max-width: 575px) {
+  .code-div{
+    max-width: 40%;
+  }
+  .code-select{
+    background-color: green;
+    max-width: 100%;
+  }
+  .phone-number{
+    display: flex;
+    flex-direction: row;
+    width: 105%;
+  }
+  .number-div{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .code-div{
+    max-width: 40%;
+  }
+  .code-select{
+    background-color: green;
+    max-width: 100%;
+  }
+  .phone-number{
+    display: flex;
+    flex-direction: row;
+    width: 52%;
+  }
+  .number-div{
+    width: 60%;
+  }
 }
 
 /*--------------------------------------------------------------
