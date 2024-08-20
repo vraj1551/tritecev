@@ -2402,8 +2402,8 @@ select {
 
 .spec-item h3 {
   color: var(--accent-color);
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+  font-size: 1.3rem !important;
+  margin-bottom: 5px !important;
 }
 
 .spec-item p {
@@ -3224,9 +3224,16 @@ select {
 
 .portfolio-details .section-title h2{
   font-weight: 700;
-  font-size: 72px;
+  font-size: 48px;
 }
 .portfolio-details .section-title p{
   font-weight: 300;
-  font-size: 32px;
+  font-size: 20px;
+}
+.service-details .product-specs .spec-item h3{
+  font-weight: 500;
+}
+.service-details .product-specs{
+  padding-bottom: 0px;
+  margin-bottom: 24px;
 }
