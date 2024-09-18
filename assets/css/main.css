@@ -1984,7 +1984,9 @@ section,
   border-radius: 8px;
   overflow: hidden;
 }
-
+.member-img img{
+  width: 340px;
+}
 .team .team-member .social {
   position: absolute;
   left: 0;
@@ -3321,10 +3323,10 @@ tbody tr:nth-child(even) {
   padding: 24px;
   border-radius: 8px;
 }
-.member-img{
+.aboutMember-img{
   width: 40%;
 }
-.member-img img{
+.aboutMember-img img{
   aspect-ratio: 1/1;
   width: 360px;
   border-radius: 4px;
@@ -3356,11 +3358,11 @@ tbody tr:nth-child(even) {
   .member{
     flex-direction: column;
   }
-  .member-img{
+  .aboutMember-img{
     width: 100%;
     text-align: center;
   }
-  .member-img img{
+  .aboutMember-img img{
     width: 300px;    
 
   }
