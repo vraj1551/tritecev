@@ -1983,10 +1983,13 @@ section,
 .team .team-member .member-img {
   border-radius: 8px;
   overflow: hidden;
+  background-color: yellow;
 }
-.member-img img{
+
+.team .team-member .member-img img{
   width: 340px;
 }
+
 .team .team-member .social {
   position: absolute;
   left: 0;
